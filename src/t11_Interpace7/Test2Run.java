@@ -7,8 +7,9 @@ public class Test2Run {
 		// 익명구현객체에 구현할 메소드를 만둘어준다.
 		Test2 t22 = new Test2() {
 			int atom = 200;
+			
+			@Override
 			public void abc() { // 구현객체는 접근제한자를 무조건 public 으로 줘야 함
-				@SuppressWarnings("unused")
 				int temp = atom;
 				System.out.println("이곳은 Test2Run 클래스의 t22익명객체 안의 abc()메소드입니다.");
 			}
